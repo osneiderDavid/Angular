@@ -1,1 +1,9 @@
-<p>directiva-nmodel3 works!</p>
+<h3>Directiva nmodel 3</h3>
+
+<div class="container">
+    <table>
+        <p>Ingrese su Nombre<input type="text" [(ngModel)]="nombre" class="form-control"></p>
+        <p>Ingrese su Apellido<input type="text" [(ngModel)]="apellido" class="form-control"></p>
+        <p class="text-success">Nombre completo: {{nombre}} {{apellido}}</p>
+    </table>
+</div>

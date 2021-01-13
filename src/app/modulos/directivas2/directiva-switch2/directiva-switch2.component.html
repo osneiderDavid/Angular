@@ -1,1 +1,27 @@
-<p>directiva-switch2 works!</p>
+<br>    
+<h3>Directiva switch 2 </h3>
+
+<div [ngSwitch]='option' class="container bg-warning"> Seleccione:
+    <button type="button" class="list-group-item list-group-item-action" (keyup)=Valores() (click)="option='1' " (click)="Iniciar=!Iniciar" >SUMA</button>
+    <button type="button" class="list-group-item list-group-item-action" (keyup)=Valores() (click)="option='2' " (click)="Iniciar=!Iniciar" >RESTA</button>
+    <button type="button" class="list-group-item list-group-item-action" (keyup)=Valores() (click)="option='3' " (click)="Iniciar=!Iniciar" >MULTIPLICACION</button>  
+    <p *ngIf="!Iniciar">NUMERO 1:
+    <input [(ngModel)]="NUM1" class="form-control justify-content-xl-end" (keyup)=Valores()></p>  
+    <p *ngIf="!Iniciar">NUMERO 2: 
+    <input [(ngModel)]="NUM2" class="form-control justify-content-xl-end" (keyup)=Valores()></p>  
+    <div *ngSwitchCase="'1'"  class="container text-success" >Resultado Suma: {{Sum}}</div>
+    <div *ngSwitchCase="'2'"  class="container text-success" >Resultado Resta: {{Sum}}</div>
+    <div *ngSwitchCase="'3'"  class="container text-success" >Resultado Multiplicacion: {{Sum}}</div>
+</div>
+
+<br>
+
+<button type="button" class="btn btn-success" (click)="Iniciar2=!Iniciar2" >Si no te gusto el switch de arriba :)</button> 
+<div *ngIf="!Iniciar2" [ngSwitch]='option2' class="container bg-warning"> Seleccione ( Numero 1 = 5 / Numero 2 = 2): <br> 1)Suma <BR> 2)Resta <br>3)Multiplicacion
+    <input [(ngModel)]="option2" class="form-control justify-content-xl-end" (keyup)=Valores2()>
+    <div *ngSwitchCase="'1'"  class="container text-success" >Resultado Suma: {{TOT}}</div>
+    <div *ngSwitchCase="'2'"  class="container text-success" >Resultado Resta: {{TOT}}</div>
+    <div *ngSwitchCase="'3'"  class="container text-success" >Resultado Multiplicacion: {{TOT}}</div>
+</div>
+
+<br>

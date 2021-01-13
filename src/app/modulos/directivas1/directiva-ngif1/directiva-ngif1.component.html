@@ -1,1 +1,35 @@
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<h3>{{titulo}}</h3>
+<br>
+<p >Matematicas: {{Matematicas}}</p>
+Nota:
+<button type="button" (click)="Matematicas=Matematicas+1">+</button>
+<button type="button"  (click)="Matematicas=Matematicas-1">-</button>
+<div style="color:blue">
+<p *ngIf="Matematicas>=3">Aprobo Matematicas</p>
+</div>
+<p>Español: {{Espanol}}</p>
+Nota:
+<button type="button"  (click)="Espanol=Espanol+1">+</button>
+<button type="button"  (click)="Espanol=Espanol-1">-</button>
+<div style="color:blue">
+<p *ngIf="Espanol>=3">Aprobaste Español</p>
+</div>
+<p >Ciencias: {{Ciencias}}</p>
+Nota:
+<button type="button"  (click)="Ciencias=Ciencias+1">+</button>
+<button type="button"  (click)="Ciencias=Ciencias-1">-</button>
+<div style="color:blue">
+<p *ngIf="Ciencias>=3">Aprobaste Ciencias</p>
+</div>
+<p >Sociales: {{Sociales}}</p>
+Nota:
+<button type="button"  (click)="Sociales=Sociales+1">+</button>
+<button type="button"  (click)="Sociales=Sociales-1">-</button>
+<div style="color:blue">
+<p *ngIf="Sociales>=3">Aprobaste Sociales</p>
+</div>
+<p></p>
+<div style="color:blue">
+<p *ngIf="((Matematicas+Espanol+Ciencias+Sociales)/4)>=4 || ((Matematicas+Espanol+Ciencias+Sociales)/4)>=5">Aprobaste</p>
+</div>

@@ -1,1 +1,10 @@
-<p>directiva-nfor4 works!</p>
+<h3>Directiva ngfor 4</h3>
+<h1><i>Descripcion de los integrantes xd</i></h1>
+<div class="container">
+    <ul class="list-group">
+        <li *ngFor="let item of IniSesion; let indice= first" class="list-group-item list-group-item-warning">
+            <p class="center">{{item.Usuario}}</p>
+            <p class="center">{{item.Descripcion}}</p>
+        </li>
+    </ul>
+</div>

@@ -1,1 +1,52 @@
-<p>directiva-switch1 works!</p>
+<h3>Directiva ngswitch 1</h3>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="navbar-nav">
+      <a class="nav-link nav-item "(click)="inicio='home'" [class.active]="inicio=='home'" >Home </a>
+      <a class="nav-link nav-item" (click)="inicio='mapa'" [class.active]="inicio=='mapa'" >Productos</a>
+      <a class="nav-link nav-item" (click)="inicio='lista'" [class.active]="inicio=='lista'" >Lista</a>
+  </div>
+</nav>
+<div class="container" [ngSwitch]="inicio">
+
+
+
+<p *ngSwitchDefault>Bienvenido a Home</p>
+<img *ngSwitchDefault src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/12/tecnologia_digital_emprendimientos-e1575901497277.jpg?w=800" class="img-fluid" alt="Responsive image">
+
+<p *ngSwitchCase="'mapa'">Conoce nuestros productos</p>
+<div *ngSwitchCase="'mapa'" class="row">
+<div *ngSwitchCase="'mapa'" class="card" style="width: 18rem; ">
+  <img src="https://olimpica.vteximg.com.br/arquivos/ids/212779-900-900/Celular-SAMSUNG-Galaxy-A20S---32GB---Azul.jpg?v=637272307499600000" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Celular Bueno</h5>
+    <p class="card-text">Celular gama media que vale mucha plata :p</p>
+    <a href="#" class="btn btn-primary">Lo Quiero</a>
+  </div>
+</div>
+<div *ngSwitchCase="'mapa'" class="card" style="width: 18rem; ">
+  <img src="https://media.aws.alkosto.com/media/catalog/product/cache/6/image/69ace863370f34bdf190e4e164b6e123/1/9/192876030714_1.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">PC Gamer</h5>
+    <p class="card-text">Un pc muy rápido que sirve pa jugar</p>
+    <a href="#" class="btn btn-primary">Lo Quiero</a>
+  </div>
+</div>
+<div *ngSwitchCase="'mapa'" class="card" style="width: 18rem; ">
+  <img src="https://olimpica.vteximg.com.br/arquivos/ids/190139-900-900/Televisor-FHD-OLIMPO---109cm-43--Smartv---43D2200S.jpg?v=636982802390330000" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">El televisor</h5>
+    <p class="card-text">pa ver Netflix</p>
+    <a href="#" class="btn btn-primary">Lo Quiero</a>
+  </div>
+</div>
+</div>
+
+<br><br>
+<ul *ngSwitchCase="'lista'" class="list-group">
+  <li class="list-group-item list-group-item-success ">Categorias</li>
+  <li class="list-group-item">television</li>
+  <li class="list-group-item">Computadores</li>
+  <li class="list-group-item">Celulares</li>
+</ul>
+
+</div> 

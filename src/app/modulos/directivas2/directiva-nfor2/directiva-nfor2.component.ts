@@ -10,6 +10,17 @@ export class DirectivaNfor2Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+  } 
+
+  public Lista = [
+    {Nombre: "ARTURO", Edad: 13},
+    {Nombre: "ISABEL", Edad: 23},
+    {Nombre: "MARIA", Edad: 33},
+]
+
+lista2:string[]=["Hola","DONY","QUE","TAL","ESTAS"];
+
+
+  
 
 }

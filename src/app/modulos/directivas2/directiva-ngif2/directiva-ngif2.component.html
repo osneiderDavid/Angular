@@ -1,1 +1,26 @@
-<p>directiva-ngif2 works!</p>
+<h3>Directiva ngif 2</h3><br>
+<h3>Prueba para saber si es apto para ganarse un millon de pesos!</h3>
+<p>Tenga en cuenta que minimo para poder ganarlo debe: Ser mayor de edad, Participar en la inscripcion y prometer ponerle 5 a este grupo.</p>
+
+<p>1. ¿Usted es mayor de edad?</p>
+<button type="button" class="btn btn-success" (click)="Primera=true">Si</button>
+<button type="button" class="btn btn-success" (click)="Primera=false">No</button>
+
+<p>2. ¿Participo en la inscripcion del sorteo?</p>
+<button type="button" class="btn btn-success" (click)="Segunda=true">Si</button>
+<button type="button" class="btn btn-success" (click)="Segunda=false">No</button>
+
+<p>3. ¿Aprobo la inscripcion?</p>
+<button type="button" class="btn btn-success" (click)="Tercera=true">Si</button>
+<button type="button" class="btn btn-success" (click)="Tercera=false">No</button>
+
+<p>4. ¿Se preparo para el sorteo?</p>
+<button type="button" class="btn btn-success" (click)="Cuarta=true">Si</button>
+<button type="button" class="btn btn-success" (click)="Cuarta=false">No</button>
+
+<p>5. ¿Promete ponerle 5 a este grupo?</p>
+<button type="button" class="btn btn-success" (click)="Quita=true">Si</button>
+<button type="button" class="btn btn-success" (click)="Quita=false">No</button>
+
+
+<p *ngIf="Primera==true && Segunda==true && Tercera==true && Cuarta==true && Quita==true || Primera==true && Segunda==true && Tercera==true && Quita==true || Primera==true && Segunda==true && Cuarta==true&& Quita==true || Primera==true && Segunda==true && Quita==true">Te ganaste el millon de pesos!</p>

@@ -1,1 +1,24 @@
-<p>directiva-nmodel4 works!</p>
+<h1>Directiva nmodel4 </h1>
+
+<div class="warning">Termina la Palabra</div>
+
+<input [(ngModel)]="Pos1"><br>
+<input [(ngModel)]="Pos2"><br>  
+<input [(ngModel)]="Pos3"><br>
+<input [(ngModel)]="Pos4"><br>
+<input [(ngModel)]="Pos5"><br>
+<input [(ngModel)]="Pos6"><br>
+<input [(ngModel)]="Pos7"><br>  
+<input [(ngModel)]="Pos8"><br>
+<input [(ngModel)]="Pos0"><br> 
+<h1>{{Pos1}}{{Pos2}}{{Pos3}}{{Pos4}}{{Pos5}}{{Pos6}}{{Pos7}}{{Pos8}}{{Pos9}}{{Pos0}}</h1>
+<br>
+<br>
+<button type="button" class="form-control bg-warning"
+ (click)="Pos1='';Pos2='';Pos3='';Pos4='';Pos5='';Pos6='';Pos7='';Pos8='';Pos9='';Pos0='';">BORRAR</button>
+<br>
+<br>
+<button type="button" class="form-control bg-warning"
+ (click)="Res='COMPUTADOR'">RESPUESTA</button>
+ <h1>{{Res}}</h1>
+

@@ -1,1 +1,34 @@
 
+<div class="container">
+<h5>Datos</h5>
+<br>
+<h3>{{titulo}}</h3>
+<h5>Ingrese si es mayor o menor de edad para conocer sus posible opciones</h5>
+<br><br>
+<div class="row " >
+
+    <div class="col-6">
+    <button type="button" class="btn btn-primary" (click)="mayor=!mayor">Haga clic si es mayor de edad</button>
+    <h4 *ngIf="mayor">sus servicios son: </h4>
+        <div *ngIf="mayor" class="container">
+            <ul class="list-group">
+                <li *ngFor='let mayoress of listamayores;let indice =index' class="list-group-item list-group-item-primary">
+            <p>{{indice +1}}</p>
+            <p>Nombre producto: <b>{{mayoress.nombre}}</b></p>
+        </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-6">
+    <button type="button" class="btn btn-primary" (click)="menor=!menor">Haga clic si es menor de edad</button>
+    <h4 *ngIf="menor">sus productos son: </h4>
+    <div *ngIf="menor" class="container">
+        <ul class="list-group">
+            <li *ngFor='let menoress of listamenores;let indice =index' class="list-group-item list-group-item-primary">
+        <p>{{indice +1}}</p>
+        <p>Nombre producto: <b>{{menoress.nombre}}</b></p>
+    </li>
+        </ul>
+    </div>
+    </div>
+</div>

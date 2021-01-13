@@ -7,7 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivaNgif3Component implements OnInit {
 
-  constructor() { }
+  Tarjeta:number;
+  Procesador:number;
+  Memoria:number;
+  Disco:number;
+  Ventiladores:number;
+  total:number;
+  deci:string;
+  constructor() { 
+    this.Tarjeta=0;
+    this.Procesador=0;
+    this.Memoria=0;
+    this.Disco=0;
+    this.Ventiladores=0;
+    this.total=(this.Tarjeta+this.Procesador+this.Memoria+this.Disco+this.Ventiladores);
+    this.deci="idk";
+  }
+  
 
   ngOnInit(): void {
   }

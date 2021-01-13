@@ -11,5 +11,6 @@ export class DirectivaSwitch4Component implements OnInit {
 
   ngOnInit(): void {
   }
+  opcion:string;
 
 }

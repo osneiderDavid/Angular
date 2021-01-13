@@ -11,5 +11,6 @@ export class DirectivaSwitch1Component implements OnInit {
 
   ngOnInit(): void {
   }
-
+  titulo ='Directiva ng Switch'
+  inicio: string = 'home';
 }

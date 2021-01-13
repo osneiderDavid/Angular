@@ -11,5 +11,24 @@ export class DirectivaNfor1Component implements OnInit {
 
   ngOnInit(): void {
   }
+  titulo='Directiva-ngfor1'
+  menor=false;
+  mayor=false;
+  variable =true;
+
+  public listamenores =[
+    {nombre:'cuenta a la mano'},
+    {nombre:'cuenta Nequi'},
+    {nombre:'corresponsal'}
+
+  ]
+  public listamayores =[
+    {nombre:'cuenta de ahorros'},
+    {nombre:'cuenta corriente'},
+    {nombre:'tarjeta de credito'},
+    {nombre:'cuenta nequi'}
+  ]
 
 }
+
+

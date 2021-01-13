@@ -1,1 +1,27 @@
-<p>directiva-nfor3 works!</p>
+<br><br><br>
+<h3>Directiva ngFor 3 </h3>
+<h1 class="text-center">Películas del momento</h1>
+<div class="container">
+    
+    <table class="table table-dark">
+        <thead>
+            <th>Número</th>
+            <th>Titulo</th>
+            <th>Duración</th>
+            <th>Director</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td *ngFor="let peli of pelicula">{{peli}}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let peli of pelicula2">{{peli}}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let peli of pelicula3">{{peli}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

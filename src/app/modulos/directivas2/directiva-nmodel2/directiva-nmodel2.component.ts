@@ -12,4 +12,11 @@ export class DirectivaNmodel2Component implements OnInit {
   ngOnInit(): void {
   }
 
+  Pos1=""; Pos2=""; Pos3="";
+  Pos4=""; Pos5=""; Pos6="";
+  Pos7=""; Pos8=""; Pos9="";
+
+  
+
+
 }

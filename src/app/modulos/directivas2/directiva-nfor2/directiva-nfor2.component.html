@@ -1,1 +1,9 @@
-<p>directiva-nfor2 works!</p>
+<h3>Directiva nfor 2</h3>
+<div class="container">
+    <ul class="list-group">
+        <li *ngFor="let item of lista2;let impar = odd;let par = even;" [ngClass]="{azul:par,verde:impar}" class="list-group-item list-group-item-success">
+            <p class="center">{{item}}</p>
+    </li>
+    </ul>
+</div>
+

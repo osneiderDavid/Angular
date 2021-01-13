@@ -1,2 +1,84 @@
+<html>
+<div class="container-md">
+    <div class="text-center">
+        <h1> {{title}} </h1>
+        <div class="list-group">
+            
+            <button type="button" class="list-group-item list-group-item-action p-3 mb-2 bg-primary text-white" 
+            (click)="Directiva_1 =!Directiva_1;Directiva_2 =true;Directiva_3 =true;Directiva_4 =true"><h5>MÓDULO
+                DIRECTIVAS 1</h5></button>
+               
+                <div class="container border border-primary" *ngIf="!Directiva_1">
+                    
+                    <app-directiva-ngif1></app-directiva-ngif1>
+                    <br>
+                    <app-directiva-nfor1></app-directiva-nfor1>
+                    <br>
+                    <app-directiva-nmodel1></app-directiva-nmodel1>
+                    <br>
+                    <app-directiva-switch1></app-directiva-switch1>
+                    <br>
+                    
+                </div>
+                
+            
+           
+            <button type="button" class="list-group-item list-group-item-action p-3 mb-2 bg-success text-white"
+                (click)="Directiva_2 =!Directiva_2;Directiva_1 =true;Directiva_3 =true;Directiva_4 =true"><h5>MÓDULO
+                    DIRECTIVAS 2</h5></button>
+                
+                <div class="container border border-success" *ngIf="!Directiva_2">
+                    
+                    <app-directiva-ngif2></app-directiva-ngif2>
+                    <br>
+                    <app-directiva-nfor2></app-directiva-nfor2>
+                    <br>
+                    <app-directiva-nmodel2></app-directiva-nmodel2>
+                    <br>
+                    <app-directiva-switch2></app-directiva-switch2>
+                    <br>
+                    
+                </div>
+           
+           
+            <button type="button" class="list-group-item list-group-item-action p-3 mb-2 bg-danger text-white"
+                (click)="Directiva_3 =!Directiva_3;Directiva_1 =true;Directiva_2 =true;Directiva_4 =true"><h5>MÓDULO
+                    DIRECTIVAS 3</h5></button>
+                    
+                <div class="container border border-danger" *ngIf="!Directiva_3">
+                    
+                    <app-directiva-ngif3></app-directiva-ngif3>
+                    <br>
+                    <app-directiva-nfor3></app-directiva-nfor3>
+                    <br>
+                    <app-directiva-nmodel3></app-directiva-nmodel3>
+                    <br>
+                    <app-directiva-switch3></app-directiva-switch3>
+                    <br>
+                    
+                </div>
+           
+            
+            <button type="button" class="list-group-item list-group-item-action p-3 mb-2 bg-warning text-white"
+                (click)="Directiva_4 =!Directiva_4;Directiva_1 =true;Directiva_2 =true;Directiva_3 =true"><h5>MÓDULO
+                    DIRECTIVAS 4</h5></button>
+                
+                <div class="container border border-warning" *ngIf="!Directiva_4">
+                    
+                    <app-directiva-ngif4></app-directiva-ngif4>
+                    <br>
+                    <app-directiva-nfor4></app-directiva-nfor4>
+                    <br>
+                    <app-directiva-nmodel4></app-directiva-nmodel4>
+                    <br>
+                    <app-directiva-switch4></app-directiva-switch4>
+                    <br>
+                    
+                </div>
+           
+        </div>
+    </div>
+</div>
 
-
+<app-componente-model></app-componente-model>
+</html>

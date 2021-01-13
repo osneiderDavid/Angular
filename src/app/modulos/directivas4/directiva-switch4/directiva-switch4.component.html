@@ -1,1 +1,84 @@
-<p>directiva-switch4 works!</p>
+<h1>Resuelve las siguientes 3 preguntas pa saber si tiene cabeza para esto :}</h1>
+<h3>Directiva ngswitch 4</h3>
+<div class="container">
+    <i>¿Cual es la preguna que nadie puede responder?</i><br>
+    <select class="align-self-lg-center" (change)="opcion = $event.target.value">
+      <option>---Seleccione una opción---</option>
+      <option value="11">A: ¿Estas bien?</option>
+      <option value="12">B: ¿Te duele?</option>
+      <option value="13">C: ¿Qué sientes?</option>
+      <option value="14">D: ¿Estás dormido?</option>      
+    </select>
+</div>
+<div class="mce-menu">
+    <div [ngSwitch]="opcion">
+        <div *ngSwitchDefault>Debes de responder</div>
+            <div *ngSwitchCase='11' class="text-danger">
+                    <i>Nope esta no es</i>
+                </div>
+                <div *ngSwitchCase='12' class="text-info">
+                    <i>Nanais tampoco esta</i>
+                </div>
+                <div *ngSwitchCase='13' class="text-secondary">
+                    <i>Cerquita, pero no</i>
+                </div>
+                <div *ngSwitchCase='14' class="text-success">
+                    <i>Si estas dormido no puedes responder porque tas dormido eee .</i>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <i>Un tren descarrilla entre Francia y España, ¿Dónde se entierran a los supervivientes?</i><br>
+            <select class="align-self-lg-center" (change)="opcion = $event.target.value">
+              <option>---Seleccione una opción---</option>
+              <option value="10">A: En el cementerio</option>
+              <option value="20">B: En donde se descarrilo el tren </option>
+              <option value="30">C: En el hospital</option>
+              <option value="40">D: No se entierran</option>      
+            </select>
+        </div>
+        <div class="mce-menu">
+            <div [ngSwitch]="opcion">
+                <div *ngSwitchDefault>Debes de responder</div>
+                    <div *ngSwitchCase='10' class="text-danger">
+                            <i>Nope esta no es</i>
+                        </div>
+                        <div *ngSwitchCase='20' class="text-info">
+                            <i>Nanais tampoco esta</i>
+                        </div>
+                        <div *ngSwitchCase='30' class="text-secondary">
+                            <i>Cerquita, pero no</i>
+                        </div>
+                        <div *ngSwitchCase='40' class="text-success">
+                            <i>Si sobrevivieron no se tienen que enterrar</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <i>¿Que es eso que si lo guardas, lo tienes y, si lo compartes, no lo tendras jamas?</i><br>
+                    <select class="align-self-lg-center" (change)="opcion = $event.target.value">
+                      <option>---Seleccione una opción---</option>
+                      <option value="1">A: Una Galleta</option>
+                      <option value="2">B: Una llave</option>
+                      <option value="3">C: El corazón de ella/el</option>
+                      <option value="4">D: Un secreto</option>      
+                    </select>
+                </div>
+                <div class="mce-menu">
+                    <div [ngSwitch]="opcion">
+                        <div *ngSwitchDefault>Debes de responder</div>
+                            <div *ngSwitchCase='1' class="text-danger">
+                                    <i>Nope esta no es</i>
+                                </div>
+                                <div *ngSwitchCase='2' class="text-info">
+                                    <i>Nanais tampoco esta</i>
+                                </div>
+                                <div *ngSwitchCase='3' class="text-secondary">
+                                    <i>Cerquita, pero no</i>
+                                </div>
+                                <div *ngSwitchCase='4' class="text-success">
+                                    <i>Si dices un secreto es porque es secretoooo</i>
+                                </div>
+                            </div>
+                        </div>
+        

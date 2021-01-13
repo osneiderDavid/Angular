@@ -4,13 +4,13 @@ import { DirectivaNmodel2Component } from './directiva-nmodel2/directiva-nmodel2
 import { DirectivaNfor2Component } from './directiva-nfor2/directiva-nfor2.component';
 import { DirectivaSwitch2Component } from './directiva-switch2/directiva-switch2.component';
 import { DirectivaNgif2Component } from './directiva-ngif2/directiva-ngif2.component';
-
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [DirectivaNmodel2Component, DirectivaNfor2Component, DirectivaSwitch2Component, DirectivaNgif2Component],
   imports: [
-    CommonModule
-  ]
+    CommonModule,FormsModule
+  ],exports:[DirectivaNmodel2Component, DirectivaNfor2Component, DirectivaSwitch2Component, DirectivaNgif2Component]
 })
 export class Directivas2Module { }

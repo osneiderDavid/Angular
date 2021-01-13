@@ -1,1 +1,32 @@
-<p>directiva-nmodel1 works!</p>
+<h3>Directiva nmodel 1 </h3>
+
+<div class="form-group">
+    <label  for="nombre">Ingrese su Nombre</label>
+    <input [(ngModel)]="nombre" class="form-control" >
+    
+  </div>
+  <div class="form-group">
+    <label  for="cedula">Ingrese su Cedula</label>
+    <input [(ngModel)]="cedula" class="form-control" >
+  </div>
+
+  <button type="button" class="btn btn-info" (click)="siguiente=!siguiente">siguente</button>
+  
+  <div  *ngIf='!siguiente'class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Confirmación de los Datos</h5>
+      <h6 class="card-subtitle mb-2 text-muted">su Nombre es:{{nombre}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">su Documento es:{{cedula}}</h6>
+      <div class="row">
+        <div  class="col-sm">
+          <button  type="button" class="btn btn-primary " (click)="confirmar=!confirmar">Cofimar</button>
+      <h3 *ngIf='!confirmar'>Registrado</h3>
+    </div>
+    <div  class="col-sm">
+      <button type="button" class="btn btn-primary" (click)="confirmar2=!confirmar2">Modificar</button>
+      <h3 *ngIf='!confirmar2'>Yuca papi</h3>
+    </div>
+      </div>
+    </div>
+  </div>
+<br>

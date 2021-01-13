@@ -1,1 +1,42 @@
-<p>directiva-ngif3 works!</p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<h3>Directiva ngif 3</h3><br>
+<h3>Determinar el presupuesto para armar tu computador ideal</h3>
+
+<p>¿Desea comprar la tarjeta grafica Gforce Gtx 1050?</p>
+<img Width='200px' Heigth='200px' src='https://images-na.ssl-images-amazon.com/images/I/81njKtGaDxL._AC_SX466_.jpg' alt='image'>
+<button type="button" class="btn btn-danger" (click)="Tarjeta=850000">Si</button>
+<button type="button" class="btn btn-danger" (click)="Tarjeta=0">No</button>
+
+
+<p>¿Desea comprar el procesador Intel Core i9?</p>
+<img Width='200px' Heigth='200px' src='https://i.blogs.es/7f8d28/intel_core_i9_x_series_skylake/1366_2000.jpg' alt='image'>
+<button type="button" class="btn btn-danger" (click)="Procesador=1000000">Si</button>
+<button type="button" class="btn btn-danger" (click)="Procesador=0">No</button>
+
+
+<p>¿Desea comprar memoria ram 32 Gb?</p>
+<img Width='200px' Heigth='200px' src='https://intercompras-a.akamaihd.net/product_thumb.php?img=images/product/KINGSTON_TECHNOLOGY_HX432C16FB3AK2_32.jpg&w=360&h=240' alt='image'>
+<button type="button" class="btn btn-danger" (click)="Memoria=2000000">Si</button>
+<button type="button" class="btn btn-danger" (click)="Memoria=0">No</button>
+
+
+<p>¿Desea comprar un disco duro?</p>
+<img Width='200px' Heigth='200px' src='https://tecnotienda.com.co/103-large_default/disco-duro-1-tera-pc-.jpg' alt='image'>
+<button type="button" class="btn btn-danger" (click)="Disco=500000">Si</button>
+<button type="button" class="btn btn-danger" (click)="Disco=0">No</button>
+
+
+<p>¿Desea comprar ventiladores led?</p>
+<img  Width='200px' Heigth='200px'src='https://hardaily.com/wp-content/uploads/2016/09/nzxt-aer-rgb-hue-01-hardaily.jpg' alt='image'>
+<button type="button" class="btn btn-danger" (click)="Ventiladores=200000">Si</button>
+<button type="button" class="btn btn-danger" (click)="Ventiladores=0">No</button>
+
+
+<p>Precio total: {{Tarjeta+Procesador+Memoria+Disco+Ventiladores}}</p>
+
+<p>¿Desea realizar la compra?</p>
+<button type="button" class="btn btn-danger" (click)="deci='Si'">Si</button>
+<button type="button" class="btn btn-danger" (click)="deci='No'">No</button>
+
+<p *ngIf="deci=='Si'">Felicidades, por su compra!!</p>
+<p *ngIf="deci=='No'">Bueno, Sera la proxima</p>

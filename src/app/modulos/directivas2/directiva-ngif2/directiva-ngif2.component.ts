@@ -11,5 +11,10 @@ export class DirectivaNgif2Component implements OnInit {
 
   ngOnInit(): void {
   }
+  Primera=false;
+  Segunda=false;
+  Tercera=false;
+  Cuarta=false;
+  Quita=false;
 
 }

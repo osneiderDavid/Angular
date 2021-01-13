@@ -1,1 +1,40 @@
-<p>directiva-nmodel2 works!</p>
+<h3>Directiva nmodel 2 </h3>
+
+<div class="badge badge-primary text-wrap center" style="width: 6rem;">
+ JUEGO 3 EN RAYAS
+</div>
+<br>
+
+<input [(ngModel)]="Pos1" class="container-md col-1" >  
+<input [(ngModel)]="Pos2" class="container-md col-1" >  
+<input [(ngModel)]="Pos3" class="container-md col-1" > <BR> 
+<input [(ngModel)]="Pos4" class="container-md col-1" >  
+<input [(ngModel)]="Pos5" class="container-md col-1" >  
+<input [(ngModel)]="Pos6" class="container-md col-1" > <BR>
+<input [(ngModel)]="Pos7" class="container-md col-1" >  
+<input [(ngModel)]="Pos8" class="container-md col-1" >  
+<input [(ngModel)]="Pos9" class="container-md col-1" > <BR>
+
+<button type="button" class="form-control bg-success" (click)="Pos1 = '' ; Pos2 = '' ; Pos3 = '' ; Pos4 = ''; Pos5 = ''
+; Pos6 = ''; Pos7 = '' ; Pos8 = ''; Pos9 = ''  ">BORRAR</button>
+
+<br><br>
+<table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td>{{Pos1}}</td>
+        <td>{{Pos2}}</td>
+        <td>{{Pos3}}</td>
+      </tr>
+      <tr>
+        <td>{{Pos4}}</td>
+        <td>{{Pos5}}</td>
+        <td>{{Pos6}}</td>
+      </tr>
+      <tr>
+        <td>{{Pos7}}</td>
+        <td>{{Pos8}}</td>
+        <td>{{Pos9}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -11,5 +11,9 @@ export class DirectivaNmodel1Component implements OnInit {
 
   ngOnInit(): void {
   }
-
+  cedula=""
+  nombre=""
+  siguiente=true
+  confirmar=true
+  confirmar2=true
 }

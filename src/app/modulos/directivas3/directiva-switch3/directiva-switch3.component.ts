@@ -11,5 +11,5 @@ export class DirectivaSwitch3Component implements OnInit {
 
   ngOnInit(): void {
   }
-
+  opcion: string;
 }

@@ -1,1 +1,28 @@
-<p>directiva-switch3 works!</p>
+<h3>Directiva ngswitch 3</h3>
+<div class="container">
+    <div class="card text-center">
+        <div class="card-body">
+            <select (change)="opcion = $event.target.value">
+      <option>---Seleccione una opción</option>
+      <option value="1">ASP.Net</option>
+      <option value="2">Angular</option>
+      <option value="3">MySQL</option>
+    </select>
+        </div>
+        <div class="">
+            <div [ngSwitch]="opcion">
+                <div *ngSwitchDefault>Debe escoger una opción</div>
+                <div *ngSwitchCase='1' class="text-success">
+                    <i>Es un entorno para aplicaciones web desarrollado y comercializado por Microsoft. Es usado por programadores y diseñadores para construir sitios web dinámicos, aplicaciones web y servicios web XML.</i>
+                </div>
+                <div *ngSwitchCase='2' class="text-success">
+                    <i>Es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.</i>
+                </div>
+                <div *ngSwitchCase='3' class="text-success">
+                    <i>Es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base de datos .</i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
